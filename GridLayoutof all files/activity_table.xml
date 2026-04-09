@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:id="@+id/main"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <TableRow>
+            <TextView
+                android:layout_span="2"
+                android:text="Feedback Form"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="10dp"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:text="Name:"
+                android:padding="8dp"/>
+
+            <EditText
+                android:hint="Enter your name"
+                android:padding="8dp"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:text="Email:"
+                android:padding="8dp"/>
+
+            <EditText
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating:"
+                android:padding="8dp"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:max="5"
+                android:stepSize="1"
+                android:rating="0"
+                android:isIndicator="false"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:text="Feedback:"
+                android:padding="8dp"/>
+
+            <EditText
+                android:hint="Write your feedback"
+                android:lines="3"
+                android:gravity="top"
+                android:padding="8dp"/>
+        </TableRow>
+
+
+        <TableRow>
+            <Button
+                android:layout_span="2"
+                android:text="Submit"
+                android:layout_marginTop="15dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
