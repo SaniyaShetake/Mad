@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp">
+
+
+<Button
+    android:id="@+id/buttonTopLeft"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Top Left"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"/>
+
+
+<Button
+    android:id="@+id/buttonTopRight"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Top Right"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"/>
+
+
+<Button
+    android:id="@+id/buttonBottomLeft"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Bottom Left"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"/>
+
+
+<Button
+    android:id="@+id/buttonBottomRight"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Bottom Right"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"/>
+
+
+<Button
+    android:id="@+id/buttonCenter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Center"
+    android:layout_centerInParent="true"/>
+
+
+<TextView
+    android:id="@+id/textViewBelowCenter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Below Center"
+    android:layout_below="@id/buttonCenter"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"/>
+
+
+<TextView
+    android:id="@+id/textViewRightOfTopLeft"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Right of Top Left"
+    android:layout_toRightOf="@id/buttonTopLeft"
+    android:layout_alignTop="@id/buttonTopLeft"
+    android:layout_marginLeft="16dp"/>
+
+
+
+</RelativeLayout>
