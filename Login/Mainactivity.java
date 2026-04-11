@@ -1,9 +1,9 @@
 package com.example.loginexplicit;
 
-import android.content.Intent;       // For starting ResumeActivity
+import android.content.Intent;       
 import android.os.Bundle;
-import android.widget.Button;       // For the Login button
-import android.widget.EditText;     // For username/password inputs
+import android.widget.Button;       
+import android.widget.EditText;     
 import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
             String pass = password.getText().toString();
 
             if(user.equals("admin") && pass.equals("1234")) {
-                // Open ResumeActivity
+               
                 Intent intent = new Intent(MainActivity.this, ResumeActivity.class);
                 startActivity(intent);
             } else {
-                // Show error if wrong credentials
+                
                 Toast.makeText(MainActivity.this, "Wrong Username or Password", Toast.LENGTH_SHORT).show();
             }
         });
